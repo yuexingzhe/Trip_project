@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>price_choose</title>
+	<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="./css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="./price_choose.css">
+	<script src="./jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+	<script src="./price_choose.js"></script>
+</head>
+<body>
+<div class="wrap">
+	
+	<div class="nav">
+		<iframe src="./nav.html" frameborder="0" width="100%" height="50px" scrolling="no"></iframe>
+	</div>
+	<div class="content">
+		<h3>报价模块</h3>
+		<div class="pic_date">
+			<div class="show_label">
+				<span class="left_label">日期</span>
+			</div>
+			<div class="form-group">
+	            <label for="dtp_input1" class="control-label start">开始：</label>
+	            <div class="input-group date form_date start_data" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input1" data-link-format="yyyy-mm-dd">
+	                <input class="form-control" size="16" type="text" value="" readonly>
+	                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+					<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+	            </div>
+				<input type="hidden" id="dtp_input1" value="" />
+				<div class="input-group date form_date end_data" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+	                <input class="form-control" size="16" type="text" value="" readonly>
+	                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+					<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+	            </div>
+				<label for="dtp_input2" class="control-label end">结束：</label>
+				<input type="hidden" id="dtp_input2" value="" /><br/>
+	        </div>
+		</div>
+		<div class="persons">
+			<div class="show_label">
+				<span class="left_label">人数</span>
+			</div>
+			<div class="specific">
+				<form action="#">
+					<select name="num" class="form-control  select_num">
+						<option value="1">1人</option>
+						<option value="2">2人</option>
+						<option value="3">3人</option>
+						<option value="4">4人</option>
+						<option value="5">5人</option>
+						<option value="6">6人</option>
+						<option value="7">7人</option>
+						<option value="8">7人以上</option>
+					</select>
+				</form>
+			</div>
+		</div>
+		<div class="inn">
+			<div class="show_label">
+				<span class="left_label">酒店标准</span>
+			</div>
+			<div class="specific">
+				<form action="#">
+					<select name="num" class="form-control  select_num">
+						<option value="1">1星</option>
+						<option value="2">2星</option>
+						<option value="3">3星</option>
+						<option value="4">4星</option>
+						<option value="5">5星</option>
+					</select>
+				</form>
+			</div>
+		</div>
+		<div class="car">
+			<div class="show_label">
+				<span class="left_label">车及导游</span>
+			</div>
+			<div class="specific">
+				<form action="#">
+					<select name="num" class="form-control  select_num">
+						<option value="1">9座司兼导</option>
+						<option value="2">9座司导分</option>
+						<option value="3">15座司导分</option>
+						<option value="4">25座司导分</option>
+						<option value="5">45座司导分</option>
+					</select>
+				</form>
+			</div>
+		</div>
+		<div class="already">
+			<div class="show_label">
+				<span class="left_label">已经选择的</span>
+			</div>
+			<div class="specific">
+				<p>中餐：  北京烤鸭（￥1000）</p>
+				<p>景点：  颐和园（￥1000）</p>
+				<p>自费：  攀岩（￥1000）</p>
+			</div>
+		</div>
+		<div class="other">
+			<div class="show_label">
+				<span class="left_label">其他推荐</span>
+			</div>
+			<div class="specific">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" value="">
+						国内机场接送（￥2000）
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" value="">
+						国外电话卡（￥1000）
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" value="">
+						啤酒饮料（￥200）
+					</label>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="btn btn-default up">提交</button>
+	</div>
+	<div class="clear"></div>
+	<div class="footer" >
+		<iframe src="./footer.html" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
+	</div>
+</div>
+<div style="background: #363636; height: 5px;"></div>
+</body>
+</html>

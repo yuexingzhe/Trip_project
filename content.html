@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>content page</title>
+	<link rel="stylesheet" href="./content.css">
+	<script type="text/javascript" src="http://maps.google.cn/maps/api/js?v=3.exp&sensor=true"></script>
+	<script src="./jquery-1.11.2.min.js"></script>
+	<script src="./mygoogle.js"></script>
+	<script src="./content.js"></script>
+</head>
+<body>
+	<div id="nav_banner">
+		<iframe src="./nav.html" frameborder="0" width="100%" height="50px" scrolling="no"></iframe>
+	</div>
+	<div id="header_crumb">
+		<div class="crumb">
+			<span class="text">
+				<a href="http://www.qyer.com/" data-bn-ipg = "bgimg-bc-index">穷游</a>
+			</span>
+	        <span class="space">&gt;</span>
+	        <span class="text">
+	        	<a href="http://plan.qyer.com/" data-bn-ipg = 'bgimg-bc-plan'>行程助手</a>
+	        </span>
+	        <span class="space">&gt;</span>
+	        <h1 class="current">papazou的英国行程</h1>
+		</div>
+	</div>
+	<div id="content">
+		<div class="show_pic">
+			<div class="pic">
+				<img src="./imgs/w1080.jpg" alt="">
+			</div>
+			<div class="infos">
+				<div class="face">
+					<div class="img">
+						<img src="./imgs/big1.png" alt="tupian" />
+					</div>
+				</div>
+				<div class="title">
+					<p>
+						<span class="main_title">papazou的英国行程</span>（共11天）
+						<br>
+						<span class="sub_title">出发日期：2015-05-21</span>
+						<br>
+						<span class="trip_tags"><em>人文</em></span>
+					</p>
+				</div>
+				<div class="other">
+					<p><span class="plan_view"></span>浏览 102</p>
+				</div>
+			</div>
+			<div class="mask_bg">
+			</div>
+		</div>
+		<!-- <div class="show_menu">
+			<div class="menu_box">
+				<ul class="menu">
+					<li>总览</li>
+					<li><span>|</span></li>
+					<li>日历</li>
+					<li><span>|</span></li>
+					<li>费用</li>
+					<li><span>|</span></li>
+					<li>留言</li>
+				</ul>
+			</div>
+			<div class="setting">
+				<div class="link">
+					<a href="#">复制行程</a>
+					<a href="#">创建行程</a>
+				</div>
+				<div class="share">
+					分享到
+				</div>
+			</div>
+		</div> -->
+		<div class="pl_content">
+			<div class="pl_left">
+				<div class="day_item">
+					<div class="day_row">
+						<div class="dayanchor" id="day1" name="day1"></div>
+						<div class="day_clock">
+							<div class="day_clock_top">
+								D1
+							</div>
+						</div>
+						<div class="day_desc">
+							<span></span>
+							<p>
+								<span class="day_time">2015-05-21</span>
+								<br>
+								<span class="day_local_1">新加坡Singapore，伦敦London</span>
+							</p>
+						</div>
+					</div>
+					<ul class="day_list">
+						<li>
+							<div class="fly_row">
+								<div class="day_mask">
+									<span class="icons plane_icons"></span>
+								</div>
+								<div class="fly_desc">
+									<p>
+										<span class="traffic_place">新加坡&nbsp;&nbsp;</span>
+										<span class="traffic_time">09:55</span>
+										<span class="icons plane_icons"></span>
+										<span class="traffic_place">伦敦&nbsp;&nbsp;</span>
+										<span class="traffic_time">20:00</span>
+									</p>
+								</div>
+							</div>
+							<div class="line_traffic"></div>
+						</li>
+						<li>
+							<div class="sleep_row">
+								<div class="day_mask">
+									<span class="icons sleep_icon"></span>
+								</div>
+								<div class="fly_desc">
+									<div class="row_info">
+										<img src="./imgs/wuzi.jpg" alt="wuzi">
+										<div class="row_title">
+											<h2>伦敦希思罗M4/J4普瑞米尔客栈，Premier Inn London Heathrow M4/J4，希灵登</h2>
+											<h2>GBP 50.00 x2</h2>
+										</div>
+									</div>
+								</div>
+								<div class="day_local">
+									<span class="local"></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="day_item">
+					<div class="day_row">
+						<div class="dayanchor" id="day1" name="day1"></div>
+						<div class="day_clock">
+							<div class="day_clock_top">
+								D2
+							</div>
+						</div>
+						<div class="day_desc">
+							<span></span>
+							<p>
+								<span class="day_time">2015-05-22</span>
+								<br>
+								<span class="day_local_1">伦敦London</span>
+							</p>
+						</div>
+					</div>
+					<ul class="day_list">
+						<li>
+							<div class="fly_row">
+								<div class="day_mask">
+									<span class="icons car_icon"></span>
+								</div>
+								<div class="fly_desc">
+									<p>
+										<span class="traffic_place">伦敦&nbsp;&nbsp;</span>
+										<span class="traffic_time">08:30&nbsp;&nbsp;</span>
+										<span class="icons icon_car"></span>
+										<span class="traffic_place">&nbsp;&nbsp;比斯特&nbsp;&nbsp;</span>
+										<span class="traffic_time">09:30</span>
+									</p>
+								</div>
+							</div>
+							<div class="line_traffic"></div>
+						</li>
+						<li>
+							<div class="number_row">
+								<div class="day_mask">
+									<div class="number">1</div>
+								</div>
+								<div class="fly_desc">
+									<div class="row_info">
+										<img src="./imgs/wuzi11.jpg" alt="wuzi">
+										<div class="row_title">
+											<h2>比斯特购物村，Bicester Village</h2>
+											<h2>牛津购物人气榜 <em class="red">第2位</em></h2>
+										</div>
+									</div>
+								</div>
+								<div class="day_local">
+									<span class="local"></span>
+								</div>
+							</div>
+							<div class="line">
+								<span>两地距离： 0.2km</span>
+							</div>
+						</li>
+						<li>
+							<div class="number_row">
+								<div class="day_mask">
+									<div class="number">2</div>
+								</div>
+								<div class="fly_desc">
+									<div class="row_info">
+										<img src="./imgs/wuzi11.jpg" alt="wuzi">
+										<div class="row_title">
+											<h2>比斯特购物村，Bicester Village</h2>
+											<h2>牛津购物人气榜 <em class="red">第2位</em></h2>
+										</div>
+									</div>
+								</div>
+								<div class="day_local">
+									<span class="local"></span>
+								</div>
+							</div>
+							<div class="line">
+								<span>两地距离： 0.2km</span>
+							</div>
+						</li>
+						<li>
+							<div class="number_row">
+								<div class="day_mask">
+									<div class="number">3</div>
+								</div>
+								<div class="fly_desc">
+									<div class="row_info">
+										<img src="./imgs/wuzi11.jpg" alt="wuzi">
+										<div class="row_title">
+											<h2>比斯特购物村，Bicester Village</h2>
+											<h2>牛津购物人气榜 <em class="red">第2位</em></h2>
+										</div>
+									</div>
+								</div>
+								<div class="day_local">
+									<span class="local"></span>
+								</div>
+							</div>
+							<div class="line">
+								<span>两地距离： 0.2km</span>
+							</div>
+						</li>
+						<li>
+							<div class="sleep_row">
+								<div class="day_mask">
+									<span class="icons sleep_icon"></span>
+								</div>
+								<div class="fly_desc">
+									<div class="row_info">
+										<img src="./imgs/wuzi2.jpg" alt="wuzi">
+										<div class="row_title">
+											<h2>圣马克馨乐庭酒店，Citadines St Marks，伦敦</h2>
+											<h2>GBP 253.00 x1</h2>
+										</div>
+									</div>
+								</div>
+								<div class="day_local">
+									<span class="local"></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="day_item">
+					<div class="day_row">
+						<div class="dayanchor" id="day1" name="day1"></div>
+						<div class="day_clock">
+							<div class="day_clock_top">
+								D3
+							</div>
+						</div>
+						<div class="day_desc">
+							<span></span>
+							<p>
+								<span class="day_time">2015-05-23</span>
+								<br>
+								<span class="day_local_1">伦敦London</span>
+							</p>
+						</div>
+					</div>
+					<ul class="day_list">
+						<li>
+							<div class="fly_row">
+								<div class="day_mask">
+									<span class="icons plane_icons"></span>
+								</div>
+								<div class="fly_desc">
+									<p>
+										<span class="traffic_place">伦敦&nbsp;&nbsp;</span>
+										<span class="traffic_time">21:30</span>
+										<span class="icons plane_icons"></span>
+										<span class="traffic_place">新加坡&nbsp;&nbsp;</span>
+										<span class="traffic_time">20:00 + 1</span>
+									</p>
+								</div>
+							</div>
+							<div class="line_traffic"></div>
+						</li>
+						<li>
+							<div class="number_row">
+								<div class="day_mask">
+									<div class="number">1</div>
+								</div>
+								<div class="fly_desc">
+									<div class="row_info">
+										<img src="./imgs/wuzi11.jpg" alt="wuzi">
+										<div class="row_title">
+											<h2>比斯特购物村，Bicester Village</h2>
+											<h2>牛津购物人气榜 <em class="red">第2位</em></h2>
+										</div>
+									</div>
+								</div>
+								<div class="day_local">
+									<span class="local"></span>
+								</div>
+							</div>
+							<div class="line">
+								<span>两地距离： 0.2km</span>
+							</div>
+						</li>
+						<li>
+							<div class="number_row">
+								<div class="day_mask">
+									<div class="number">2</div>
+								</div>
+								<div class="fly_desc">
+									<div class="row_info">
+										<img src="./imgs/tupian1.jpg" alt="wuzi">
+										<div class="row_title">
+											<h2>希思罗机场，Heathrow Airport,LHR</h2>
+										</div>
+									</div>
+								</div>
+								<div class="day_local">
+									<span class="local"></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="pl_right">
+				<div class="map" id="myGoogleMap">
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer_about">
+			<ul>
+				<li>
+					<dl>
+						<dt>关于我们</dt>
+						<dd><a href="#" target="_blank" rel="nofollow" data-bn-ipg="foot-about-1">旅游简介</a></dd>
+						<dd><a href="http://www.qyer.com/htmlpages/contact.html" target="_blank" rel="nofollow" data-bn-ipg="foot-about-2">联系我们</a></dd>
+						<dd><a href="http://www.qyer.com/partner/" target="_blank" rel="nofollow" data-bn-ipg="foot-about-3">合作伙伴</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>加入穷游</dt>
+						<dd><a href="http://www.qyer.com/job/" target="_blank" rel="nofollow" data-bn-ipg="foot-join-1">招聘职位</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>网站条款</dt>
+						<dd><a href="http://www.qyer.com/htmlpages/member.html" target="_blank" rel="nofollow" data-bn-ipg="foot-clause-1">会员条款</a></dd>
+						<dd><a href="http://www.qyer.com/htmlpages/bbsguide.html" target="_blank" rel="nofollow" data-bn-ipg="foot-clause-2">社区指南</a></dd>
+						<dd><a href="http://www.qyer.com/htmlpages/copyright.html" target="_blank" rel="nofollow" data-bn-ipg="foot-clause-3">版权声明</a></dd>
+						<dd><a href="http://www.qyer.com/htmlpages/exemption.html" target="_blank" rel="nofollow" data-bn-ipg="foot-clause-4">免责声明</a></dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>帮助中心</dt>
+						<dd><a href="http://site.qyer.com/tyro/" target="_blank" rel="nofollow" data-bn-ipg="foot-help-1">新手上路</a></dd>
+						<dd><a href="http://bbs.qyer.com/faq.php" target="_blank" rel="nofollow" data-bn-ipg="foot-help-2">使用帮助</a></dd>
+						<dd><a href="http://www.qyer.com/sitemap.html" target="_blank" data-bn-ipg="foot-help-4">网站地图</a></dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+		<div class="copyright">
+			2004-2015 旅游网 qyer.com All rights reserved. Version v5.57 京ICP备12003524号 京公网安备11010502023470 京ICP证140673号
+		</div>
+	</div>
+	<div class="ui_upward_wrapper">
+		<div class="ui_upward_icon">回顶部</div>
+	</div>
+</body>
+</html>

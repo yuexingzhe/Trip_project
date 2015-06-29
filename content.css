@@ -1,0 +1,605 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+ul, li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+/*导航栏条目开始*/
+#nav_banner {
+	position: relative;
+	width: 100%;
+	top: 0px;
+}
+/*导航栏条目结束*/
+
+
+/*面包屑开始*/
+#header_crumb {
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 12px;
+	line-height: 14px;
+}
+#header_crumb a {
+	font-weight: bold;
+	color: #0073b6;
+	text-decoration: none;
+}
+#header_crumb a:hover {
+	text-decoration: underline;
+}
+#header_crumb .crumb {
+	width: 1100px;
+	height: 14px;
+	margin: 0 auto;
+}
+#header_crumb .crumb .text {
+	float: left;
+}
+#header_crumb .crumb .space {
+	float: left;
+	padding: 0 7px;
+}
+#header_crumb .crumb .current {
+	font-size: 100%;
+	font-weight: normal;
+	color: #636363;
+}
+/*面包屑结束*/
+
+
+/*内容区开始*/
+#content {
+	width: 1100px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/*图片展示开始*/
+#content .show_pic {
+	position: relative;
+	width: 1100px;
+	height: 480px;
+	overflow: hidden;
+}
+
+.show_pic .pic img {
+	width: 1100px;
+}
+.show_pic .infos {
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	width: 1100px;
+	z-index: 2;
+}
+.show_pic .infos .face {
+	float: left;
+	margin: 0px 0px 20px 25px;
+}
+.show_pic .infos .face div {
+	position: relative;
+	bottom: -5px;
+	border-radius: 50%;
+	display: block;
+	width: 85px;
+	height: 85px;
+	box-shadow: 0 0 3px rgba(0,0,0,0.4);
+	border: 2px solid white;
+}
+.show_pic .infos .face div img {
+	border-radius: 50%;
+	width: 85px;
+	height: 85px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.show_pic .infos .title {
+	float: left;
+	padding-left: 20px;
+	line-height: 24px;
+	margin-top: 10px;
+	/*border: 1px solid green;*/
+}
+.show_pic .infos .title p {
+	color: white;
+	font-size: 30px;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Microsoft YaHei",\9ED1\4F53,\5b8b\4f53,sans-serif;
+}
+.show_pic .infos .title .main_title {
+	font-size: 30px;
+}
+.show_pic .infos .title .sub_title {
+	font-size: 12px;
+}
+.show_pic .infos .title .trip_tags {
+	font-size: 12px;
+	color: #636363;
+}
+.show_pic .infos .title .trip_tags em {
+	background: #fff;
+	opacity: 0.9;
+	padding: 5px 10px;
+	border-radius: 12px;
+	font-style: normal;
+	font-weight: normal;
+}
+.show_pic .infos .other {
+	float: right;
+	padding: 47px 35px 0 0;
+	color: white;
+}
+.show_pic .infos .other p {
+	font-size: 12px;
+}
+.show_pic .infos .other .plan_view {
+	display: inline-block;
+	width: 16px;
+	height: 12px;
+	background: url(./imgs/other_icons.png) no-repeat;
+	vertical-align: middle;
+	margin-bottom: 3px;
+	margin-right: 5px;
+}
+.show_pic .mask_bg {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 1100px;
+	height: 150px;
+	background: url(./imgs/userMask.png) repeat-x;
+}
+/*图片展示结束*/
+
+/*menu导航开始*/
+.show_menu {
+	position: relative;
+	z-index: 99;
+	font-family: "Hiragino Sans GB","Microsoft YaHei",黑体,宋体,sans-serif;  
+	color: #959595;
+	height: 70px;
+	border: 1px solid rgba(0,0,0,0.08);
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.08);
+	border-top: 0px;
+	background: #fff;
+	line-height: 70px;
+}
+.show_menu .menu_box {
+	float: left;
+}
+.show_menu .menu_box .menu li {
+	float: left;
+	margin-left: 50px;
+}
+.show_menu .setting {
+	float: right;
+	padding-right: 20px;
+}
+.show_menu .setting .link {
+	float: left;
+}
+.show_menu .setting .link a:nth-child(1) {
+	background-color: #f26622;
+	border: none;
+  	border-radius: 3px;
+  	cursor: pointer;
+  	font-size: 14px;
+  	text-align: center;
+  	height: 28px;
+  	line-height: 30px;
+  	padding: 2px 10px;
+  	color: white;
+  	display: inline-block;
+  	margin-right: 8px;
+}
+.show_menu .setting .link a:nth-child(2) {
+	background-color: #1995dd;
+	border: none;
+  	border-radius: 3px;
+  	cursor: pointer;
+  	font-size: 14px;
+  	text-align: center;
+  	height: 28px;
+  	line-height: 30px;
+  	padding: 2px 10px;
+  	color: white;
+  	display: inline-block;
+}
+.show_menu .setting .link a:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.show_menu .setting .share {
+	float: left;
+	margin-left: 10px;
+	position: relative;
+	background: url(./imgs/share_icon.png) no-repeat right center;
+	padding-right: 12px;
+	color: rgb(50, 50, 50);
+	font-size: 12px;
+}
+/*menu导航结束*/
+
+/*day list开始*/
+.pl_content {
+	overflow: hidden;
+	position: relative;
+	padding-top: 10px;
+}
+.pl_content .pl_left {
+	/*border: 1px solid red;*/
+	width: 650px;
+	float: left;
+	font-family: "Hiragino Sans GB","Microsoft YaHei",黑体,宋体,sans-serif;
+}
+
+.day_item {
+	margin-top: 30px;
+}
+
+.day_item .day_row {
+	border: 1px solid #ebebeb;
+}
+.day_item .day_row .day_clock {
+	height: 112px;
+	font-size: 48px;
+	text-align: center;
+	width: 122px;
+	float: left;
+	line-height: 140px;
+	border-right: 1px solid #ebebeb;
+	color: #636363;
+	font-weight: bold;
+	font-family: Arial;
+	cursor: default;
+}
+.day_item .day_row .day_clock .day_clock_top {
+	background: url('./imgs/calendar.png') no-repeat;
+	width: 122px;
+	height: 31px;
+	position: relative;
+	top: -5px;
+}
+.day_item .day_desc {
+	padding: 0 0 0 50px;
+	float: left;
+	height: 112px;	
+	/*border: 1px solid red;*/
+}
+.day_item .day_desc span {
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.day_item .day_desc p {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 30px;
+}
+.day_item .day_desc .day_time {
+	color: #c4c4c4;
+	font-size: 16px;
+}
+.day_item .day_desc .day_local_1 {
+	color: #636363;
+	font-size: 24px;
+	cursor: default;
+}
+.day_item .day_row:after {
+	content: ".";
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+
+.day_item .day_list {
+	border-left: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+}
+.day_item .day_list li:after {
+	content: ".";
+	display: block;
+	height: 0px;
+	visibility: hidden;
+	clear: both;
+}
+.day_item .day_list li:nth-child(1) {
+	cursor: pointer;
+	border-left: 4px solid transparent;
+}
+.day_item .day_list li:nth-child(1):hover {
+	border-left: 4px solid #1995DD;
+}
+.day_item .day_list .day_mask {
+	float: left;
+	padding: 20px 43px;
+}
+span.icons {
+	background: url("./imgs/traffic_icon.png") no-repeat;
+	width: 33px;
+	height: 33px;
+	display: inline-block;
+}
+span.plane_icons {
+	background-position: 0px 0px;
+}
+span.plane_icons:hover {
+	background-position: 0px -41px;
+}
+.day_item .day_list .line_traffic {
+	clear: both;
+	border: 1px solid #f7f7f7;
+}
+.day_item .day_list .fly_desc {
+	float: left;
+	font-size: 16px;
+	padding-left: 50px;
+}
+.day_item .day_list .fly_desc p {
+	line-height: 76px;
+}
+.fly_desc span {
+	display: inline-block;
+}
+.fly_desc span.plane_icons {
+	background-position: 0 -90px;
+	width: 20px;
+	height: 20px;
+	margin: -3px 18px 0px;
+	vertical-align: middle;
+	/*border: 1px solid red;*/
+}
+
+.day_list .sleep_row .day_mask {
+	float: left;
+	padding: 20px 43px;
+}
+.day_item .day_list li {
+	cursor: pointer;
+	border-left: 4px solid transparent;
+}
+.day_item .day_list li:hover {
+	border-left: 4px solid #F26900;
+}
+span.sleep_icon {
+	background-position: -382px 0;
+}
+span.sleep_icon:hover {
+	background-position: -382px -41px;
+}
+.sleep_row .fly_desc {
+ 	float: left;
+	padding-left: 30px;
+}
+.sleep_row .fly_desc .row_info {
+	width: 380px;
+	overflow: hidden;
+	white-space: nowrap;	
+	padding: 11px 0;
+}
+.sleep_row .fly_desc .row_info img {
+	margin-right: 20px;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+}
+.sleep_row .fly_desc .row_info h2 {
+	font-size: 14px;
+	color: #636363;
+	line-height: 24px;
+}
+.sleep_row .fly_desc .row_info .row_title {
+	display: inline-block;
+	vertical-align: middle;
+}
+.sleep_row .fly_desc .row_info h2:nth-child(2) {
+	font-size: 12px;
+	color: #959595;
+}
+.day_local {
+	float: right;
+	margin: 24px 30px 0 0;
+	cursor: pointer;	
+	/*border: 1px solid red;*/
+}
+span.local {
+	display: inline-block;
+	background: url("./imgs/local.png") no-repeat;
+	width: 16px;
+	height: 22px;
+	/*border: 1px solid red;*/
+}
+span.local:hover {
+	background-position: 0px -23px;
+}
+
+span.car_icon {
+	background-position: -217px 0;
+}
+span.car_icon:hover {
+	background-position: -217px -41px;
+}
+span.icon_car {
+	background-position: -215px -90px;
+	width: 20px;
+	height: 20px;
+}
+.number_row {
+	overflow: hidden;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid #EBEBEB;
+	position: relative;
+}
+.day_list .number_row .day_mask {
+	padding: 20px 40px;
+	border-left: 4px solid transparent;
+	float: left;
+}
+.number_row  .number {
+	width: 32px;
+	height: 32px;
+	background: url("./imgs/number.png") no-repeat;
+	font-size: 20px;
+	text-align: center;
+	font-family: tahoma,\5b8b\4f53,sans-serif;
+	color: #fff;
+	line-height: 32px;
+}
+.number_row  .number:hover {
+	background-position: 0px -32px;
+}
+.number_row  .fly_desc {
+	padding-left: 30px;
+	font-size: 16px;
+}
+.number_row  .fly_desc .row_info {
+	padding: 11px 0;
+	font-size: 14px;
+	width: 400px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.number_row  .fly_desc .row_info img {
+	margin-right: 20px;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+}
+.number_row  .fly_desc .row_info .row_title {
+	display: inline-block;
+	vertical-align: middle;
+}
+.number_row  .fly_desc .row_info .row_title h2:nth-child(1) {
+	color: #636363;
+	font-size: 14px;
+	line-height: 30px;
+}
+.number_row  .fly_desc .row_info .row_title h2:nth-child(2) {
+	color: #959595;
+	font-size: 12px;
+}
+em.red {
+	color: red;
+	font-style: normal;
+	font-weight: normal;
+}
+.day_list .line {
+	margin-left: -4px;
+	width: auto;
+	padding-left: 165px;
+	color: #b5b5b5;	
+	height: 30px;
+	line-height: 30px;
+	background: #fbfbfb url("./imgs/dashed_icon.png") 58px center no-repeat;
+	font-size: 12px;
+}
+/*day list结束*/
+
+/*内容右侧开始*/
+.pl_right {
+	width: 430px;
+	float: right;
+}
+.pl_right .map {
+	width: 430px;
+	height: 460px;
+	margin-top: 30px;
+}
+/*内容右侧结束*/
+/*内容区结束*/
+
+
+
+/*页脚开始*/
+#footer {
+	background: #363636;
+	color: #959595;
+	font-size: 12px;
+	margin-top: 50px;
+}
+
+#footer .footer_about {
+	padding-top: 20px;
+	width: 1200px;
+	height: 123px;
+	/*border: 1px solid red;*/
+	margin: 0px auto;
+}
+
+#footer .footer_about ul {
+	width: 700px;
+	height: 120px;
+	margin-left: 347px;
+}
+
+#footer .footer_about li {
+	float: left;
+  	width: 140px;
+ 	line-height: 24px;
+}
+
+#footer .footer_about li a {
+	text-decoration: none;
+	color: #959595;
+}
+
+#footer .footer_about li dt {
+	font-weight: bold;
+  	color: #c2c2c2;
+}
+
+#footer .copyright {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0px;
+}
+/*页脚结束*/
+
+
+/*地图随滚轴滚动开始*/
+.fixed {
+	position: fixed;
+	top: 20px;
+	left: 794.5px;
+}
+.fixedBottom {
+	position: fixed;
+	bottom: 260px;
+	left: 794.5px;
+}
+/*地图随滚轴滚动结束*/
+
+
+/*回顶部开始*/
+.ui_upward_wrapper {
+	position: fixed;
+	left: 1194.5px;
+	top: 430px;
+	z-index: 100;
+	width: 60px;
+	border: 1px solid #d7d7d7;
+	box-shadow: 0 0 3px rgba(0,0,0,0.15);
+	background: #fff;
+	display: none;
+}
+.ui_upward_icon {
+	width: 100%;
+	height: 25px;
+	padding-top: 53px;
+	background: white url("./imgs/icon_gotop.png") no-repeat center 16px;
+	cursor: pointer;
+	color: #959595;
+	text-align: center;
+}
+
+/*回顶部结束*/

@@ -1,0 +1,162 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	margin: 0px;
+	background: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.clear {
+	clear: both;
+}
+
+.wrap { 
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-size: 100% 100%;
+	position: relative;
+	font-family: Arial,Helvetica,sans-serif,SimSun;
+	margin: 0px;
+}
+.clear {
+	clear: both;
+}
+.back {
+	display: block;
+	padding: 0px 26px;
+	text-align: center;
+	height: 34px;
+	line-height: 34px;
+	background: #EEE;
+	margin-top: 30px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-size: 14px;
+	cursor: pointer;
+	/* width: 115px; */
+	margin: 40px auto 0px;
+}
+.back:hover {
+	background: #ccc;
+}
+
+/*主要部分开始*/
+.content {
+	width: 1100px;
+	margin: 0 auto;
+	margin-top: -5px;
+	min-height: 300px;
+	position: relative;
+}
+.content h2, h3 {
+	text-align: center;
+	padding: 20px;
+	font-weight: normal;
+}
+.content h2 {
+	border-bottom: 1px solid #C9CACB;
+}
+.content h3 {
+	border-bottom: 1px solid #C9CACB;
+}
+.left_label {
+	display: inline-block;
+	text-align: center;
+	height: 34px;
+	line-height: 34px;
+	/*background: #59A1E9;*/
+	border-radius: 3px;
+	font-size: 14px;
+	padding: 0px 20px;
+}
+.inn_price {
+	margin-top: 30px;
+}
+.inn_title {
+	float: left;
+	width: 160px;
+	text-align: right;
+}
+.specific {
+	margin-left: 170px;
+	background: #eee;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 855px;
+}
+.inn_price .double {
+	margin-left: 20px;
+}
+.inn_price .double p {
+	padding: 15px;
+}
+.inn_price .double p span {
+	margin-left: 100px;
+}
+.inn_price .single {
+	margin-left: 20px;	
+}
+.inn_price .single p {
+	padding: 15px;
+}
+.inn_price .single p span {
+	margin-left: 100px;
+}
+.total {
+	margin-top: 20px;
+	padding-bottom: 50px;
+}
+.total .specific {
+	padding-bottom: 20px;
+}
+.total .inclu {
+	float: left;
+	width: 50%;
+}
+.total .inclu h3,  .total .exclu h3{
+	width: 80%;
+	margin: 0 auto;
+}
+.total .inclu p {
+	padding-left: 120px;
+	padding-bottom: 20px;
+}
+.total .inclu p:nth-child(2) {
+	padding-top: 24px;
+}
+.total .inclu p span:first-child {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+}
+.total .exclu {
+	width: 50%;
+	float: left;
+}
+.total .exclu p {
+	padding-left: 67px;
+	padding-bottom: 20px;
+}
+.total .exclu p:nth-child(2) {
+	padding-top: 24px;
+}
+.total .exclu p span:first-child {
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+}
+/*主要部分结束*/
+.footer {
+	width: 100%;
+	height: 197px;
+	position: relative;
+	left: 0px;
+	bottom: 0px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>user_center</title>
+	<link rel="stylesheet" href="./trip.css">
+	<script src="./jquery-1.11.2.min.js"></script>
+	<script src="./trip.js"></script>
+</head>
+<body>
+<div class="wrap">
+	
+	<div class="nav">
+		<iframe src="./nav.html" frameborder="0" width="100%" height="50px" scrolling="no"></iframe>
+		<div class="user">用户中心</div>
+	</div>
+	<div class="content">
+		<div class="side">
+			<div class="menu">菜单</div>
+			<a href="./simple_account.html" target="myFrameId"  class="item">我的账户 | My Account</a>
+			<a href="./simple_trip.html" target="myFrameId"  class="item add">我的行程 | My Travel</a>
+			<a href="./simple_order.html" target="myFrameId"  class="item">我的订单 | My Order</a>
+			<a href="./simple_gift.html" target="myFrameId"  class="item">我的礼品 | My Gift</a>
+		</div>
+		<div class="side_content">
+            <iframe src="./simple_trip.html" name="myFrameId" scrolling="yes" frameborder="0" width="100%" height="100%"></iframe>
+		</div> 
+
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+	<div class="footer" >
+		<iframe src="./footer.html" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
+	</div>
+</div>
+<div style="height: 100px; background: #363636; height: 5px;"></div>
+</body>
+</html>

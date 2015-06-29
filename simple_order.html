@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>simple trip</title>
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		.title {
+			text-align: center;
+			color: #fff;
+			font-size: 21px;	
+			padding: 20px;
+		}
+		.content {
+			width: 800px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		span.icons {
+			background: url("./imgs/traffic_icon.png") no-repeat;
+			width: 33px;
+			height: 33px;
+			display: inline-block;
+		}
+		span.plane_icons {
+			background-position: 0 -90px;
+			width: 20px;
+			height: 20px;
+			margin: -3px 18px 0px;
+			vertical-align: middle;
+		}
+		.content > div {
+			padding: 5px;
+		}
+		.content .date {
+			padding: 5px;
+			text-align: left;
+			background: #93BFEA;
+		}
+		.content .where {
+			padding: 5px;
+			text-align: left;
+			line-height: 30px;
+			background: #93BFEA;
+		}
+		span.local {
+			display: inline-block;
+			background: url("./imgs/local.png") no-repeat;
+			width: 16px;
+			height: 22px;
+			margin-left: 15px;
+			margin-right: 15px;
+			vertical-align: sub;
+			/*border: 1px solid red;*/
+		}
+		span.local:hover {
+			background-position: 0px -23px;
+		}
+	</style>
+</head>
+<body>
+	<div class="title">个人订单</div>
+	<div class="content">
+		<div>
+			<div class="date">日期：2015-05-21</div>
+			<div class="where">酒店<span class="local"></span>伦敦希思罗M4/J4普瑞米尔客栈</div>
+		</div>
+		<div>
+			<div class="date">日期：2015-05-22</div>
+			<div class="where">酒店<span class="local"></span>伦敦希思罗M4/J4普瑞米尔客栈</div>
+		</div>
+		<div>
+			<div class="date">日期：2015-05-23</div>
+			<div class="where">酒店<span class="local"></span>伦敦希思罗M4/J4普瑞米尔客栈</div>
+		</div>
+		<div>
+			<div class="date">日期：2015-05-24</div>
+			<div class="where">酒店<span class="local"></span>伦敦希思罗M4/J4普瑞米尔客栈</div>
+		</div>
+	</div>
+</body>
+</html>
